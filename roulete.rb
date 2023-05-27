@@ -7,7 +7,7 @@ puts "type exit to quit" #help how to exit
 puts "select from " , bet #help what numbers
 while bet != "exit" && bet != "x"  #start while loop
 	puts "Please make your bet." #ask for bet
-	bet = gets.chomp # get answher not .to_ so we can exit
+	bet = gets.chomp # get answher not .to_i so we can exit
 	bek = bet.to_i #convert to indiger
 		if bek > 36 || bek < 0 then #check if bet is bigger then 0 and smaller then 36
 		puts "Please select numbers" #help for the user
