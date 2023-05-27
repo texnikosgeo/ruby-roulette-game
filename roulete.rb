@@ -9,7 +9,7 @@ while bet != "exit" && bet != "x"  #start while loop
 	puts "Please make your bet." #ask for bet
 	bet = gets.chomp # get answher not .to_i so we can exit
 	bek = bet.to_i #convert to indiger
-		if bek > 36 || bek < 0 then #check if bet is bigger then 0 and smaller then 36
+	    if bek > 36 || bek < 0 then #check if bet is bigger then 0 and smaller then 36
 		puts "Please select numbers" #help for the user
 		puts "Between 0 and 36 ." #help for the user
 	    elsif bek.zero? then	# chek if input is empty
